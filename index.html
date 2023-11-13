@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitFav</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="container">
+          <div>
+            <h1 id="gitfavi">
+              <img src="./svg/gitfav.svg" alt="Gitfav" srcset="" />
+            </h1>
+          </div>
+
+          <div class="search">
+            <label class="sr-only" for="input-search">Usuário do Github</label>
+            <input
+              id="input-search"
+              type="text"
+              placeholder="Digite o Github username que quer favoritar"
+            />
+            <button>
+              <img src="./svg/strelabutton.svg" alt="estrelabutton" />
+              Favoritar
+            </button>
+          </div>
+        </div>
+      </header>
+      <table class="listGit">
+        <thead>
+          <tr>
+            <th>Usuário</th>
+            <th>Repositórios</th>
+            <th>Followers</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="user">
+              <img src="https://github.com/diego3g.png" alt="img de carlos" />
+              <a href="https://github.com/diego3g" target="_blank">
+                <p>Diego Fernandes</p>
+                <span>diego3g</span>
+              </a>
+            </td>
+            <td class="repositories">48</td>
+            <td class="followers">22000</td>
+            <td><button class="remove">Remover</button></td>
+          </tr>
+
+          <tr>
+            <td class="user">
+              <img
+                src="https://github.com/brmartins92.png"
+                alt="img de carlos"
+              />
+              <a href="https://github.com/brmartins92" target="_blank">
+                <p>Bruno Martins</p>
+                <span>brmartins92</span>
+              </a>
+            </td>
+            <td class="repositories">25</td>
+            <td class="followers">11</td>
+            <td><button class="remove">Remover</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
